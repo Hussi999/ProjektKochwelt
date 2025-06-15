@@ -13,9 +13,12 @@ const ingredients = {
 
 document.getElementById("portionDiv").addEventListener("submit", function (event) {
     event.preventDefault();
-    const portions = parseFloat(document.getElementById("portions").value);
-
-
+   let portions =parseFloat(document.getElementById("portions").value);
+   if (isNaN(portions) || portions <=0) {
+    portions = 1;
+    document.getElementById("portions").value = 1;
+   }
+    
     for (const key in ingredients) {
         const base = ingredients[key];
         const result = (base.amount / basePortions) * portions;

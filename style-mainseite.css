@@ -350,7 +350,31 @@ main {
   margin-top: 0;
   font-weight: bold;
 }
+/*====================kontaktbox benachrichtigung============================================*/
+#thankYouBox {
+  margin-top: 20px;
+  padding:15px 20px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.5s ease;
+  
+}
 
+#thankYouBox.show {
+  opacity: 1;
+  transform: translateX(0%) translateY(-14px);
+}
+#thankYouBox.hidden {
+  display: none;
+}
+
+
+/*================================================================================================*/
 form {
   display: flex;
   flex-direction: column;
