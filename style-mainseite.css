@@ -99,6 +99,12 @@ header img {
   margin-top: 50px;
   text-decoration: none;
   text-align: center;
+
+
+}
+
+.Rezept-offnen:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 1290px) {
@@ -517,7 +523,7 @@ footer {
     display: none !important;
   }
 
-    .social-icons {
+  .social-icons {
 
     margin-right: 0px;
 

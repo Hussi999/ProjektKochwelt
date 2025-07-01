@@ -228,7 +228,7 @@ header img {
 footer {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: grey;
     height: 100px;
 
@@ -466,11 +466,21 @@ button {
     }
 }
 
+@media (max-width: 675px) {
+
+      footer {
+
+    justify-content: center;
+
+  }
+
+  .footer-img {
+    display: none;
+  }
+}
+
 @media (max-width: 450px) {
 
-    .footer-img {
-        display: none;
-    }
 
 
     .phone-button-div {
