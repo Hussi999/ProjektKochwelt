@@ -20,6 +20,26 @@ body {
     font-style: normal;
 }
 
+.container-wrap1 {
+    width: 100%;
+    max-width: 1924px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Optional: Begrenzung der Breite */
+    padding: 0 20px;
+}
+
+.container-wrap2 {
+  width: 100%;
+  max-width: 1924px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Optional: Begrenzung der Breite */
+  padding: 0 20px;
+}
+
 .container-wrap {
     max-width: 1920px;
     margin: 0 auto;
@@ -43,6 +63,7 @@ header {
     align-items: center;
     position: absolute;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    height: 80px;
     top: 0;
     left: 0;
     right: 0;

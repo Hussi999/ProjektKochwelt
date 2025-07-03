@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,94 +12,101 @@
 </head>
 
 <body>
+  <div class="page-wrap">
+    <header>
+      <div class="container-wrap1">
 
-  <header class="container-wrap">
-    <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+        <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
 
-    <!-- Hamburger Button -->
-    <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
+        <!-- Hamburger Button -->
+        <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
 
-    <nav id="main-nav">
-      <a class="navlink" href="./index.html">Start</a>
-      <a class="navlink" href="./nudeln.html">Rezept des Tages</a>
-      <a class="navlink" href="./kontakt.html">Kontakt</a>
-      <a class="navlink" href="./impressum.html">Impressum</a>
-    </nav>
-  </header>
+        <nav id="main-nav">
+          <a class="navlink" href="./index.html">Start</a>
+          <a class="navlink" href="./nudeln.html">Rezept des Tages</a>
+          <a class="navlink" href="./kontakt.html">Kontakt</a>
+          <a class="navlink" href="./impressum.html">Impressum</a>
+        </nav>
+      </div>
+    </header>
 
 
-  <section class="img-section container-wrap">
-    <h1>Chocolate Dream Cake</h1>
-    <img src="./img/chocolate_dream_cake.jpg" alt="Chocolate Dream Cake">
+    <section class="img-section container-wrap">
+      <h1>Chocolate Dream Cake</h1>
+      <img src="./img/chocolate_dream_cake.jpg" alt="Chocolate Dream Cake">
 
-    <div class="informations-schnitzel">
-      <span class="informations-zeit">30 min</span>
-      <span class="informations-kcal">simple</span>
-      <span class="informations-datum">16.06.2025</span>
-    </div>
-  </section>
+      <div class="informations-schnitzel">
+        <span class="informations-zeit">30 min</span>
+        <span class="informations-kcal">simple</span>
+        <span class="informations-datum">16.06.2025</span>
+      </div>
+    </section>
 
-  <section class="liste-zutaten container-wrap">
+    <section class="liste-zutaten container-wrap">
 
-    <div class="phone-button-div">
+      <div class="phone-button-div">
 
-      <div>
-        <span>Zutaten für:</span>
-        <input id="portionen" type="number" value="4" min="1" max="10">
+        <div>
+          <span>Zutaten für:</span>
+          <input id="portionen" type="number" value="4" min="1" max="10">
+        </div>
+
+        <button class="button" onclick="aktualisiereZutaten()" type="button">Portionen</button>
+
       </div>
 
-      <button class="button" onclick="aktualisiereZutaten()" type="button">Portionen</button>
+      <div class="liste-div">
+        <ul id="zutaten" class="liste-ul" style="list-style-type: none;">
+          <li data-basis="200" data-einheit="g Mehl" class="grey">200 g Mehl</li>
+          <li data-basis="150" data-einheit="g Zucker" class="space">150 g Zucker</li>
+          <li data-basis="100" data-einheit="g Butter" class="grey">100 g Butter</li>
+          <li data-basis="2" data-einheit="Eier" class="space">2 Eier</li>
+          <li data-basis="50" data-einheit="g Kakaopulver" class="grey">50 g Kakaopulver</li>
+          <li data-basis="1" data-einheit="TL Backpulver" class="space">1 TL Backpulver</li>
+          <li data-basis="100" data-einheit="ml Milch" class="grey">100 ml Milch</li>
+        </ul>
+      </div>
 
-    </div>
+    </section>
 
-    <div class="liste-div">
-      <ul id="zutaten" class="liste-ul" style="list-style-type: none;">
-        <li data-basis="200" data-einheit="g Mehl" class="grey">200 g Mehl</li>
-        <li data-basis="150" data-einheit="g Zucker" class="space">150 g Zucker</li>
-        <li data-basis="100" data-einheit="g Butter" class="grey">100 g Butter</li>
-        <li data-basis="2" data-einheit="Eier" class="space">2 Eier</li>
-        <li data-basis="50" data-einheit="g Kakaopulver" class="grey">50 g Kakaopulver</li>
-        <li data-basis="1" data-einheit="TL Backpulver" class="space">1 TL Backpulver</li>
-        <li data-basis="100" data-einheit="ml Milch" class="grey">100 ml Milch</li>
-      </ul>
-    </div>
+    <section class="zubereitung-section container-wrap">
+      <h2>Zubereitung</h2>
 
-  </section>
+      <div class="zubereitung-informationen">
+        <span class="informations-zeit">ca. 60 min</span>
+      </div>
 
-  <section class="zubereitung-section container-wrap">
-    <h2>Zubereitung</h2>
-
-    <div class="zubereitung-informationen">
-      <span class="informations-zeit">ca. 60 min</span>
-    </div>
-
-    <p> Den Ofen auf 180°C vorheizen. Mehl, Zucker, Butter, Eier, Kakaopulver, Backpulver und Milch in eine Schüssel
-      geben
-      und gut vermischen. In eine gefettete Kuchenform füllen und ca. 40 Minuten backen. Abkühlen lassen und genießen!
-    </p>
+      <p> Den Ofen auf 180°C vorheizen. Mehl, Zucker, Butter, Eier, Kakaopulver, Backpulver und Milch in eine Schüssel
+        geben
+        und gut vermischen. In eine gefettete Kuchenform füllen und ca. 40 Minuten backen. Abkühlen lassen und genießen!
+      </p>
 
 
-  </section>
+    </section>
 
-  <section class="kontakt-section container-wrap">
-    <h3>Rezept erstellt von</h3>
-    <div class="kontakt-section-informationen">
-      <img src="./img/profile.png" alt="">
-      <span>Alaa Eldin Abdalla</span>
-    </div>
-  </section>
+    <section class="kontakt-section container-wrap">
+      <h3>Rezept erstellt von</h3>
+      <div class="kontakt-section-informationen">
+        <img src="./img/profile.png" alt="">
+        <span>Alaa Eldin Abdalla</span>
+      </div>
+    </section>
+  </div>
+  <footer class="site-footer">
+    <div class="container-wrap2">
 
-  <footer class="site-footer container-wrap">
-    <img class="footer-img" src="./img/logo.png" alt="logo">
-    <div class="social-icons">
-      <a target="_blank" href="https://www.facebook.com/?locale=de_DE"><img src="./img/facebook_logo.png"
-          alt="facebook"></a>
-      <a target="_blank" href="https://www.instagram.com/"><img src="./img/instagrram_logo.png" alt="instagram"></a>
-      <a target="_blank" href="https://x.com/"><img src="./img/x logo.png" alt="twitter"></a>
+      <img class="footer-img" src="./img/logo.png" alt="logo">
+      <div class="social-icons">
+        <a target="_blank" href="https://www.facebook.com/?locale=de_DE"><img src="./img/facebook_logo.png"
+            alt="facebook"></a>
+        <a target="_blank" href="https://www.instagram.com/"><img src="./img/instagrram_logo.png" alt="instagram"></a>
+        <a target="_blank" href="https://x.com/"><img src="./img/x logo.png" alt="twitter"></a>
+      </div>
+
     </div>
   </footer>
 

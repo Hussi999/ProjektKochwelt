@@ -12,102 +12,118 @@
 </head>
 
 <body>
+    <div class="page-wrap">
+        <header>
+            <div class="container-wrap1">
 
-    <header class="container-wrap">
-        <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+                <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
 
-        <!-- Hamburger Button -->
-        <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
+                <!-- Hamburger Button -->
+                <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
 
-        <nav id="main-nav">
-            <a class="navlink" href="./index.html">Start</a>
-            <a class="navlink" href="./nudeln.html">Rezept des Tages</a>
-            <a class="navlink" href="./kontakt.html">Kontakt</a>
-            <a class="navlink" href="./impressum.html">Impressum</a>
-        </nav>
-    </header>
+                <nav id="main-nav">
+                    <a class="navlink" href="./index.html">Start</a>
+                    <a class="navlink" href="./nudeln.html">Rezept des Tages</a>
+                    <a class="navlink" href="./kontakt.html">Kontakt</a>
+                    <a class="navlink" href="./impressum.html">Impressum</a>
+                </nav>
+
+            </div>
+        </header>
 
 
-    <section class="img-section container-wrap">
-        <h1>Wiener Schnitzel</h1>
-        <img src="./img/wiener-schnitzel.png" alt="">
+        <section class="img-section container-wrap">
+            <h1>Wiener Schnitzel</h1>
+            <img src="./img/wiener-schnitzel.png" alt="">
 
-        <div class="informations-schnitzel">
-            <span class="informations-zeit">30 min</span>
-            <span class="informations-kcal">mittel</span>
-            <span class="informations-datum">16.06.2025</span>
-        </div>
-    </section>
+            <div class="informations-schnitzel">
+                <span class="informations-zeit">30 min</span>
+                <span class="informations-kcal">mittel</span>
+                <span class="informations-datum">16.06.2025</span>
+            </div>
+        </section>
 
-    <section class="liste-zutaten container-wrap">
+        <section class="liste-zutaten container-wrap">
 
-        <div class="phone-button-div">
+            <div class="phone-button-div">
 
-            <div>
-                <span>Zutaten für:</span>
-                <input id="portionen" type="number" value="4" min="1" max="10">
+                <div>
+                    <span>Zutaten für:</span>
+                    <input id="portionen" type="number" value="4" min="1" max="10">
+                </div>
+
+                <button class="button" onclick="aktualisiereZutaten()" type="button">Portionen</button>
+
+            </div>
+            <div class="liste-div">
+
+                <ul id="zutaten" class="liste-ul" style="list-style-type: none;">
+
+                    <li data-basis="1" data-einheit="Kalbsplätzli (z. B. Stotzen, je ca. 150 g)" class="grey">1
+                        Kalbsplätzli
+                        (z. B. Stotzen, je ca. 150 g)</li>
+                    <li data-basis="0.25" data-einheit="TL Salz" class="space">0.25 TL Salz</li>
+                    <li data-basis="0.75" data-einheit="EL Mehl" class="grey">0.75 EL Mehl</li>
+                    <li data-basis="50" data-einheit="g Paniermehl" class="space">50g Paniermehl</li>
+                    <li data-basis="0.25" data-einheit="Bio-Zitrone" class="grey">0.25 Bio-Zitrone</li>
+
+                </ul>
+
             </div>
 
-            <button class="button" onclick="aktualisiereZutaten()" type="button">Portionen</button>
+        </section>
 
-        </div>
-        <div class="liste-div">
+        <section class="zubereitung-section container-wrap">
+            <h2>Zubereitung</h2>
 
-            <ul id="zutaten" class="liste-ul" style="list-style-type: none;">
+            <div class="zubereitung-informationen">
+                <span class="informations-zeit">ca. 30 min</span>
+            </div>
 
-                <li data-basis="1" data-einheit="Kalbsplätzli (z. B. Stotzen, je ca. 150 g)" class="grey">1 Kalbsplätzli
-                    (z. B. Stotzen, je ca. 150 g)</li>
-                <li data-basis="0.25" data-einheit="TL Salz" class="space">0.25 TL Salz</li>
-                <li data-basis="0.75" data-einheit="EL Mehl" class="grey">0.75 EL Mehl</li>
-                <li data-basis="50" data-einheit="g Paniermehl" class="space">50g Paniermehl</li>
-                <li data-basis="0.25" data-einheit="Bio-Zitrone" class="grey">0.25 Bio-Zitrone</li>
-
-            </ul>
-
-        </div>
-
-    </section>
-
-    <section class="zubereitung-section container-wrap">
-        <h2>Zubereitung</h2>
-
-        <div class="zubereitung-informationen">
-            <span class="informations-zeit">ca. 30 min</span>
-        </div>
-
-        <p>Ofen auf 60 Grad vorheizen, Platte und Teller vorwärmen. Plätzli zwischen einem aufgeschnittenen
-            Plastikbeutel mit einem Pfannenboden oder Fleischklopfer etwas flach klopfen, würzen. Mehl und Paniermehl in
-            je einen flachen Teller geben. Eier in einem tiefen Teller verklopfen. Plätzli portionenweise im Mehl, im
-            Ei, dann im Paniermehl wenden, Panade nur ganz leicht andrücken (siehe Hinweis). Plätzli nochmals im Ei und
-            im Paniermehl wenden. Brattopf bis ⅓ Höhe mit Öl füllen, auf ca. 170 Grad erhitzen. Ein Plätzli mit einer
-            Zange hineingeben, unter gelegentlichem Wenden ca. 5 Min. goldbraun frittieren. Plätzli herausnehmen, auf
-            Haushaltpapier abtropfen, warm stellen, dabei Ofentür mit einem Kellenstiel einen Spaltbreit offen halten,
-            damit die Panade knusprig bleibt. Restliche Plätzli gleich frittieren. Zitrone in Schnitze schneiden, Saft
-            über die angerichteten Schnitzel träufeln.</p>
+            <p>Ofen auf 60 Grad vorheizen, Platte und Teller vorwärmen. Plätzli zwischen einem aufgeschnittenen
+                Plastikbeutel mit einem Pfannenboden oder Fleischklopfer etwas flach klopfen, würzen. Mehl und
+                Paniermehl in
+                je einen flachen Teller geben. Eier in einem tiefen Teller verklopfen. Plätzli portionenweise im Mehl,
+                im
+                Ei, dann im Paniermehl wenden, Panade nur ganz leicht andrücken (siehe Hinweis). Plätzli nochmals im Ei
+                und
+                im Paniermehl wenden. Brattopf bis ⅓ Höhe mit Öl füllen, auf ca. 170 Grad erhitzen. Ein Plätzli mit
+                einer
+                Zange hineingeben, unter gelegentlichem Wenden ca. 5 Min. goldbraun frittieren. Plätzli herausnehmen,
+                auf
+                Haushaltpapier abtropfen, warm stellen, dabei Ofentür mit einem Kellenstiel einen Spaltbreit offen
+                halten,
+                damit die Panade knusprig bleibt. Restliche Plätzli gleich frittieren. Zitrone in Schnitze schneiden,
+                Saft
+                über die angerichteten Schnitzel träufeln.</p>
 
 
-    </section>
+        </section>
 
-    <section class="kontakt-section container-wrap">
-        <h3>Rezept erstellt von</h3>
-        <div class="kontakt-section-informationen">
-            <img src="./img/profile.png" alt="">
-            <span>Hannes</span>
-        </div>
-    </section>
+        <section class="kontakt-section container-wrap">
+            <h3>Rezept erstellt von</h3>
+            <div class="kontakt-section-informationen">
+                <img src="./img/profile.png" alt="">
+                <span>Hannes</span>
+            </div>
+        </section>
+    </div>
+    <footer class="site-footer">
+        <div class="container-wrap2">
 
-    <footer class="site-footer container-wrap">
-        <img class="footer-img" src="./img/logo.png" alt="logo">
-        <div class="social-icons">
-            <a target="_blank" href="https://www.facebook.com/?locale=de_DE"><img src="./img/facebook_logo.png"
-                    alt="facebook"></a>
-            <a target="_blank" href="https://www.instagram.com/"><img src="./img/instagrram_logo.png"
-                    alt="instagram"></a>
-            <a target="_blank" href="https://x.com/"><img src="./img/x logo.png" alt="twitter"></a>
+            <img class="footer-img" src="./img/logo.png" alt="logo">
+            <div class="social-icons">
+                <a target="_blank" href="https://www.facebook.com/?locale=de_DE"><img src="./img/facebook_logo.png"
+                        alt="facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/"><img src="./img/instagrram_logo.png"
+                        alt="instagram"></a>
+                <a target="_blank" href="https://x.com/"><img src="./img/x logo.png" alt="twitter"></a>
+            </div>
+
         </div>
     </footer>
 

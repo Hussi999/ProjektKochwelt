@@ -1,7 +1,26 @@
+html,
 body {
-  margin: 0px;
-  font-family: "Raleway", sans-serif;
+  height: 100%;
+  margin: 0;
 
+}
+
+
+body {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+.page-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Zentriert horizontal */
+  width: 100%;
 }
 
 @font-face {
@@ -18,20 +37,53 @@ body {
   font-style: normal;
 }
 
-.container-wrap {
-  max-width: 1920px;
-  margin: 0 auto;
-  /* Zentriert horizontal */
-  padding: 0 20px;
-  /* Optional: etwas Abstand links/rechts */
+section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.container-wrap1 {
+  width: 100%;
+  max-width: 1924px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Optional: Begrenzung der Breite */
+  padding: 0 20px;
+}
+
+.container-wrap2 {
+  width: 100%;
+  max-width: 1924px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Optional: Begrenzung der Breite */
+  padding: 0 20px;
+}
+
+.container-wrap2 {
+  width: 100%;
+
+}
+
+.container-wrap {
+  width: 100%;
+  max-width: 1924px;
+  padding: 100px 0;
+  /* Optional: Begrenzung der Breite */
+  /* padding: 0 20px; */
+}
+
 
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 16px;
   position: absolute;
+  height: 80px;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
   top: 0;
   left: 0;
@@ -62,11 +114,10 @@ header img {
 
 /* Default (Desktop) */
 .croissantdiv {
+  padding-top: 80px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 32px;
-  padding: 125px 200px 50px 350px;
+  padding-left: 210px;
+  padding-right: 210px;
 }
 
 .croissantdiv img {
@@ -75,6 +126,7 @@ header img {
   object-fit: fill;
   object-position: center;
   border-radius: 10px;
+  margin-right: 20px;
 }
 
 .croissant-content {
@@ -217,7 +269,7 @@ header img {
 .want-something-new-item span {
   display: block;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 16px;
   color: #000;
 }
 
@@ -280,17 +332,16 @@ header img {
 footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-color: grey;
   height: 100px;
-  margin-top: 80px;
 
 }
 
 .footer-img {
   width: 250px;
   height: auto;
-  margin-left: 100px;
+
 
 }
 
@@ -298,7 +349,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 32px;
-  margin-right: 100px;
+
 
 }
 
@@ -515,8 +566,12 @@ footer {
 
   footer {
 
-    justify-content: center;
+    padding: 19.5px 0;
 
+  }
+
+  .container-wrap2 {
+    justify-content: center;
   }
 
   .info-box {
@@ -535,7 +590,7 @@ footer {
 @media (max-width: 361px) {
 
   b {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   h2 {
@@ -543,11 +598,11 @@ footer {
   }
 
   .pfanne-wok-h2 {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   p {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 

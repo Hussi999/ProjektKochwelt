@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,100 +12,111 @@
 </head>
 
 <body>
+  <div class="page-wrap">
+    <header>
+      <div class="container-wrap1">
+        <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
 
-  <header class="container-wrap">
-    <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+        <!-- Hamburger Button -->
+        <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
 
-    <!-- Hamburger Button -->
-    <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
-
-    <nav id="main-nav">
-      <a class="navlink" href="./index.html">Start</a>
-      <a class="navlink" href="./nudeln.html">Rezept des Tages</a>
-      <a class="navlink" href="./kontakt.html">Kontakt</a>
-      <a class="navlink" href="./impressum.html">Impressum</a>
-    </nav>
-  </header>
+        <nav id="main-nav">
+          <a class="navlink" href="./index.html">Start</a>
+          <a class="navlink" href="./nudeln.html">Rezept des Tages</a>
+          <a class="navlink" href="./kontakt.html">Kontakt</a>
+          <a class="navlink" href="./impressum.html">Impressum</a>
+        </nav>
+      </div>
+    </header>
 
 
-  <section class="img-section container-wrap">
-    <h1>Gebratene Nudeln</h1>
-    <img src="./img/hauptbild.jpg" alt="">
+    <section class="img-section container-wrap">
+      <h1>Gebratene Nudeln</h1>
+      <img src="./img/hauptbild.jpg" alt="">
 
-    <div class="informations-schnitzel">
-      <span class="informations-zeit">30 min</span>
-      <span class="informations-kcal">schwer</span>
-      <span class="informations-datum">16.06.2025</span>
-    </div>
-  </section>
+      <div class="informations-schnitzel">
+        <span class="informations-zeit">30 min</span>
+        <span class="informations-kcal">schwer</span>
+        <span class="informations-datum">16.06.2025</span>
+      </div>
+    </section>
 
-  <section class="liste-zutaten container-wrap">
+    <section class="liste-zutaten container-wrap">
 
-    <div class="phone-button-div">
+      <div class="phone-button-div">
 
-      <div>
-        <span>Zutaten für:</span>
-        <input id="portionen" type="number" value="4" min="1" max="10">
+        <div>
+          <span>Zutaten für:</span>
+          <input id="portionen" type="number" value="4" min="1" max="10">
+        </div>
+
+        <button class="button" onclick="aktualisiereZutaten()" type="button">Portionen</button>
+
+      </div>
+      <div class="liste-div">
+
+        <ul id="zutaten" class="liste-ul" style="list-style-type: none;">
+          <li data-basis="250" data-einheit="g chinesische Eiernudeln, gekocht" class="grey">250 g chinesische
+            Eiernudeln,
+            gekocht</li>
+          <li data-basis="200" data-einheit="g Sojasprossen oder Mungobohnenkeimlinge" class="space">200 g Sojasprossen
+            oder
+            Mungobohnenkeimlinge</li>
+          <li data-basis="1" data-einheit="Stück Lauchzwiebel, klein geschnitten" class="grey">1 Stück Lauchzwiebel,
+            klein
+            geschnitten</li>
+          <li data-basis="20" data-einheit="g Paprikapulver, Currypulver und Chilipulver" class="space">20 g
+            Paprikapulver,
+            Currypulver und Chilipulver</li>
+          <li data-basis="200" data-einheit="g Geflügelfleisch" class="grey">200 g Geflügelfleisch</li>
+        </ul>
+
       </div>
 
-      <button class="button" onclick="aktualisiereZutaten()" type="button">Portionen</button>
+    </section>
 
-    </div>
-    <div class="liste-div">
+    <section class="zubereitung-section container-wrap">
+      <h2>Zubereitung</h2>
 
-      <ul id="zutaten" class="liste-ul" style="list-style-type: none;">
-        <li data-basis="250" data-einheit="g chinesische Eiernudeln, gekocht" class="grey">250 g chinesische Eiernudeln,
-          gekocht</li>
-        <li data-basis="200" data-einheit="g Sojasprossen oder Mungobohnenkeimlinge" class="space">200 g Sojasprossen
-          oder
-          Mungobohnenkeimlinge</li>
-        <li data-basis="1" data-einheit="Stück Lauchzwiebel, klein geschnitten" class="grey">1 Stück Lauchzwiebel, klein
-          geschnitten</li>
-        <li data-basis="20" data-einheit="g Paprikapulver, Currypulver und Chilipulver" class="space">20 g Paprikapulver,
-          Currypulver und Chilipulver</li>
-        <li data-basis="200" data-einheit="g Geflügelfleisch" class="grey">200 g Geflügelfleisch</li>
-      </ul>
+      <div class="zubereitung-informationen">
+        <span class="informations-zeit">ca. 30 min</span>
+      </div>
 
-    </div>
-
-  </section>
-
-  <section class="zubereitung-section container-wrap">
-    <h2>Zubereitung</h2>
-
-    <div class="zubereitung-informationen">
-      <span class="informations-zeit">ca. 30 min</span>
-    </div>
-
-    <p>Erhitze einen Schuss Öl in einer großen Pfanne oder im Wok. Gib das Geflügelfleisch dazu und brate es rundum
-      goldbraun. Füge die Lauchzwiebel und Sojasprossen hinzu und röste kurz mit. Gib die vorgegarten Eiernudeln in die
-      Pfanne. Würze mit Sojasauce, Sambal Oelek, Paprikapulver, Currypulver und Chilipulver nach Geschmack. Alles gut
-      vermengen und erhitzen, bis die Nudeln leicht knusprig sind. Sofort servieren und nach Belieben mit
-      Frühlingszwiebeln garnieren.
-    </p>
+      <p>Erhitze einen Schuss Öl in einer großen Pfanne oder im Wok. Gib das Geflügelfleisch dazu und brate es rundum
+        goldbraun. Füge die Lauchzwiebel und Sojasprossen hinzu und röste kurz mit. Gib die vorgegarten Eiernudeln in
+        die
+        Pfanne. Würze mit Sojasauce, Sambal Oelek, Paprikapulver, Currypulver und Chilipulver nach Geschmack. Alles gut
+        vermengen und erhitzen, bis die Nudeln leicht knusprig sind. Sofort servieren und nach Belieben mit
+        Frühlingszwiebeln garnieren.
+      </p>
 
 
-  </section>
+    </section>
 
-  <section class="kontakt-section container-wrap">
-    <h3>Rezept erstellt von</h3>
-    <div class="kontakt-section-informationen">
-      <img src="./img/profile.png" alt="">
-      <span>Amin</span>
-    </div>
-  </section>
+    <section class="kontakt-section container-wrap">
+      <h3>Rezept erstellt von</h3>
+      <div class="kontakt-section-informationen">
+        <img src="./img/profile.png" alt="">
+        <span>Amin</span>
+      </div>
+    </section>
+  </div>
 
-  <footer class="site-footer container-wrap">
-    <img class="footer-img" src="./img/logo.png" alt="logo">
-    <div class="social-icons">
-      <a target="_blank" href="https://www.facebook.com/?locale=de_DE"><img src="./img/facebook_logo.png"
-          alt="facebook"></a>
-      <a target="_blank" href="https://www.instagram.com/"><img src="./img/instagrram_logo.png" alt="instagram"></a>
-      <a target="_blank" href="https://x.com/"><img src="./img/x logo.png" alt="twitter"></a>
+  <footer class="site-footer">
+    <div class="container-wrap2">
+
+      <img class="footer-img" src="./img/logo.png" alt="logo">
+      <div class="social-icons">
+        <a target="_blank" href="https://www.facebook.com/?locale=de_DE"><img src="./img/facebook_logo.png"
+            alt="facebook"></a>
+        <a target="_blank" href="https://www.instagram.com/"><img src="./img/instagrram_logo.png" alt="instagram"></a>
+        <a target="_blank" href="https://x.com/"><img src="./img/x logo.png" alt="twitter"></a>
+      </div>
+
     </div>
   </footer>
 

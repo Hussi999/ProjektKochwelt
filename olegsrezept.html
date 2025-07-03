@@ -12,99 +12,109 @@
 </head>
 
 <body>
+    <div class="page-wrap">
+        <header>
+            <div class="container-wrap1">
 
-    <header class="container-wrap">
-        <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+                <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
 
-        <!-- Hamburger Button -->
-        <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
+                <!-- Hamburger Button -->
+                <button class="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-nav">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
 
-        <nav id="main-nav">
-            <a class="navlink" href="./index.html">Start</a>
-            <a class="navlink" href="./nudeln.html">Rezept des Tages</a>
-            <a class="navlink" href="./kontakt.html">Kontakt</a>
-            <a class="navlink" href="./impressum.html">Impressum</a>
-        </nav>
-    </header>
+                <nav id="main-nav">
+                    <a class="navlink" href="./index.html">Start</a>
+                    <a class="navlink" href="./nudeln.html">Rezept des Tages</a>
+                    <a class="navlink" href="./kontakt.html">Kontakt</a>
+                    <a class="navlink" href="./impressum.html">Impressum</a>
+                </nav>
+            </div>
+        </header>
 
-    <section class="img-section container-wrap">
-        <h1>Lachs Carpaccio</h1>
-        <img src="./img/lachs.jpg" alt="">
+        <section class="img-section container-wrap">
+            <h1>Lachs Carpaccio</h1>
+            <img src="./img/lachs.jpg" alt="">
 
-        <div class="informations-schnitzel">
-            <span class="informations-zeit">20 min</span>
-            <span class="informations-kcal">370 kcal per person</span>
-            <span class="informations-datum">19.06.2025</span>
-        </div>
-    </section>
+            <div class="informations-schnitzel">
+                <span class="informations-zeit">20 min</span>
+                <span class="informations-kcal">370 kcal per person</span>
+                <span class="informations-datum">19.06.2025</span>
+            </div>
+        </section>
 
 
-    <section class="liste-zutaten container-wrap">
+        <section class="liste-zutaten container-wrap">
 
-        <div class="phone-button-div">
+            <div class="phone-button-div">
 
-            <div>
-                <span>Zutaten für:</span>
-                <input id="portionen" type="number" value="4" min="1" max="10">
+                <div>
+                    <span>Zutaten für:</span>
+                    <input id="portionen" type="number" value="4" min="1" max="10">
+                </div>
+
+                <button class="button" onclick="aktualisiereZutaten()" type="button">Portionen</button>
+
+            </div>
+            <div class="liste-div">
+
+                <ul id="zutaten" class="liste-ul" style="list-style-type: none;">
+
+                    <li data-basis="125" data-einheit=" g Lachs, frish (suschiqualität)" class="grey"> 500g Lachs, frish
+                        (suschiqualität)</li>
+                    <li data-basis="7.5" data-einheit=" ml Essig" class="space">0.30 ml Essig</li>
+                    <li data-basis="7.5" data-einheit="ml  Zitronensaft" class="grey">0.30 ml Zitronensaft</li>
+                    <li data-basis="11.25" data-einheit="ml Weißwein" class="space">45ml Weißwein</li>
+                    <li data-basis="1" data-einheit=" EL Öl" class="grey">4EL Öl</li>
+                    <li data-basis="1" data-einheit="g Zucker" class="space">4g Zucker</li>
+                    <li data-basis="1" data-einheit=" EL Kapern,gechakt" class="grey">4EL Kapern,gechakt</li>
+                    <li data-basis="1" data-einheit=" Bündel Kerbelblättchen" class="space">4Bündel Kerbelblättchen</li>
+                    <li data-basis="5" data-einheit=" g Salz und Pfefer" class="grey">20g Salz und Pfefer</li>
+
+                </ul>
+
             </div>
 
-            <button class="button" onclick="aktualisiereZutaten()" type="button">Portionen</button>
+        </section>
 
-        </div>
-        <div class="liste-div">
+        <section class="zubereitung-section container-wrap">
+            <h2>Zubereitung</h2>
 
-            <ul id="zutaten" class="liste-ul" style="list-style-type: none;">
+            <div class="zubereitung-informationen">
+                <span class="informations-zeit">ca. 20 min</span>
+            </div>
 
-                <li data-basis="125" data-einheit=" g Lachs, frish (suschiqualität)" class="grey"> 500g Lachs, frish (suschiqualität)</li>
-                <li data-basis="7.5" data-einheit=" ml Essig" class="space">0.30 ml Essig</li>
-                <li data-basis="7.5" data-einheit="ml  Zitronensaft" class="grey">0.30 ml Zitronensaft</li>
-                <li data-basis="11.25" data-einheit="ml Weißwein" class="space">45ml Weißwein</li>
-                <li data-basis="1" data-einheit=" EL Öl" class="grey">4EL Öl</li>
-                <li data-basis="1" data-einheit="g Zucker" class="space">4g Zucker</li>
-                <li data-basis="1" data-einheit=" EL Kapern,gechakt" class="grey">4EL Kapern,gechakt</li>
-                <li data-basis="1" data-einheit=" Bündel Kerbelblättchen" class="space">4Bündel Kerbelblättchen</li>
-                <li data-basis="5" data-einheit=" g Salz und Pfefer" class="grey">20g Salz und Pfefer</li>
+            <p>Lachs ganz dünn schneiden und rosettenförmig anrichten. Mit Kapern und Kerbelblättchen bestreuen, salzen
+                und pfeffern. Aus Essig, Zitronensaft, Weißwein, Öl und Zucker eine Marinade rühren und über dem Lachs
+                verteilen. Zudecken und 30 Min. ziehen lassen.
 
-            </ul>
-
-        </div>
-
-    </section>
-
-    <section class="zubereitung-section container-wrap">
-        <h2>Zubereitung</h2>
-
-        <div class="zubereitung-informationen">
-            <span class="informations-zeit">ca. 20 min</span>
-        </div>
-
-        <p>Lachs ganz dünn schneiden und rosettenförmig anrichten. Mit Kapern und Kerbelblättchen bestreuen, salzen und pfeffern. Aus Essig, Zitronensaft, Weißwein, Öl und Zucker eine Marinade rühren und über dem Lachs verteilen. Zudecken und 30 Min. ziehen lassen.
-
-        </p>
+            </p>
 
 
-    </section>
+        </section>
 
-    <section class="kontakt-section container-wrap">
-        <h3>Rezept erstellt von</h3>
-        <div class="kontakt-section-informationen">
-            <img src="./img/profile.png" alt="">
-            <span>Oleg</span>
-        </div>
-    </section>
+        <section class="kontakt-section container-wrap">
+            <h3>Rezept erstellt von</h3>
+            <div class="kontakt-section-informationen">
+                <img src="./img/profile.png" alt="">
+                <span>Oleg</span>
+            </div>
+        </section>
+    </div>
+    <footer class="site-footer">
+        <div class="container-wrap2">
 
-    <footer class="site-footer container-wrap">
-        <img class="footer-img" src="./img/logo.png" alt="logo">
-        <div class="social-icons">
-            <a target="_blank" href="https://www.facebook.com/?locale=de_DE"><img src="./img/facebook_logo.png"
-                    alt="facebook"></a>
-            <a target="_blank" href="https://www.instagram.com/"><img src="./img/instagrram_logo.png"
-                    alt="instagram"></a>
-            <a target="_blank" href="https://x.com/"><img src="./img/x logo.png" alt="twitter"></a>
+            <img class="footer-img" src="./img/logo.png" alt="logo">
+            <div class="social-icons">
+                <a target="_blank" href="https://www.facebook.com/?locale=de_DE"><img src="./img/facebook_logo.png"
+                        alt="facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/"><img src="./img/instagrram_logo.png"
+                        alt="instagram"></a>
+                <a target="_blank" href="https://x.com/"><img src="./img/x logo.png" alt="twitter"></a>
+            </div>
+
         </div>
     </footer>
 

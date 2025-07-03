@@ -1,6 +1,16 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+
+}
+
+
 body {
     font-family: "Raleway", sans-serif;
-    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
 }
 
@@ -18,12 +28,44 @@ body {
     font-style: normal;
 }
 
+.page-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Zentriert horizontal */
+    width: 100%;
+}
+
+.container-wrap1 {
+    width: 100%;
+    max-width: 1924px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Optional: Begrenzung der Breite */
+    padding: 0 20px;
+}
+
+.container-wrap2 {
+    width: 100%;
+    max-width: 1924px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Optional: Begrenzung der Breite */
+    padding: 0 20px;
+}
+
 .container-wrap {
     max-width: 1920px;
-    margin: 0 auto;
     /* Zentriert horizontal */
-    padding: 0 125px;
     /* Optional: etwas Abstand links/rechts */
+    width: 80%;
+}
+
+section {
+    flex: 1;
 }
 
 span {
@@ -61,10 +103,10 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 16px;
     position: absolute;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
     background-color: white;
+    height: 80px;
     top: 0;
     left: 0;
     right: 0;
@@ -93,7 +135,7 @@ header img {
 .img-section {
     padding-bottom: 50px;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-    margin-top: 110px;
+    margin-top: 100px;
 }
 
 .img-section img {
@@ -228,7 +270,7 @@ header img {
 footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: grey;
     height: 100px;
 
@@ -468,15 +510,19 @@ button {
 
 @media (max-width: 675px) {
 
-      footer {
+    footer {
 
-    justify-content: center;
+        padding: 19.5px 0;
 
-  }
+    }
 
-  .footer-img {
-    display: none;
-  }
+    .footer-img {
+        display: none;
+    }
+
+    .container-wrap2 {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 450px) {
