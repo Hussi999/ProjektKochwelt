@@ -27,7 +27,6 @@ body {
     justify-content: space-between;
     align-items: center;
     /* Optional: Begrenzung der Breite */
-    padding: 0 20px;
 }
 
 .container-wrap2 {
@@ -37,7 +36,6 @@ body {
   justify-content: center;
   align-items: center;
   /* Optional: Begrenzung der Breite */
-  padding: 0 20px;
 }
 
 .container-wrap {
@@ -72,7 +70,11 @@ header {
 
 header img {
     width: 200px;
+    margin-left: 20px;
+}
 
+.text-header {
+    padding-right: 20px;
 }
 
 .navlink {
@@ -87,30 +89,6 @@ header img {
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 7px;
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 24px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    z-index: 1100;
-    position: absolute;
-    right: 20px;
-    transition: transform 0.3s ease;
-}
-
-.hamburger .bar {
-    width: 100%;
-    height: 3px;
-    background-color: #333;
-    border-radius: 2px;
-    transition: all 0.3s ease;
 }
 
 
@@ -189,7 +167,6 @@ footer {
 .footer-img {
     width: 250px;
     height: auto;
-
 }
 
 .social-icons {
@@ -206,18 +183,28 @@ footer {
     border-radius: 50%;
 }
 
-body.menu-open::before {
-    z-index: 900;
-    /* kleiner als nav */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1100;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s ease;
 }
 
-nav {
-    z-index: 1050;
-}
-
-nav a {
-    color: #333 !important;
-    /* dunkle Farbe sicherstellen */
+.hamburger .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
 }
 
 @media (max-width: 675px) {
@@ -314,4 +301,18 @@ nav a {
 
         width: 250px;
     }
+}
+
+body.menu-open::before {
+    z-index: 900;
+    /* kleiner als nav */
+}
+
+nav {
+    z-index: 1050;
+}
+
+nav a {
+    color: #333 !important;
+    /* dunkle Farbe sicherstellen */
 }

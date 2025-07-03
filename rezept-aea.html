@@ -37,7 +37,7 @@
 
     <section class="img-section container-wrap">
       <h1>Chocolate Dream Cake</h1>
-      <img src="./img/chocolate_dream_cake.jpg" alt="Chocolate Dream Cake">
+      <img src="./img/choclate dream cake.jpg" alt="Chocolate Dream Cake">
 
       <div class="informations-schnitzel">
         <span class="informations-zeit">30 min</span>
@@ -52,22 +52,22 @@
 
         <div>
           <span>Zutaten für:</span>
-          <input id="portionen" type="number" value="4" min="1" max="10">
+          <input id="portion" type="number" value="4" min="1" max="10">
         </div>
 
-        <button class="button" onclick="aktualisiereZutaten()" type="button">Portionen</button>
+        <button class="button" onclick="updateIngredients()" type="button">Portionen</button>
 
       </div>
 
       <div class="liste-div">
-        <ul id="zutaten" class="liste-ul" style="list-style-type: none;">
-          <li data-basis="200" data-einheit="g Mehl" class="grey">200 g Mehl</li>
-          <li data-basis="150" data-einheit="g Zucker" class="space">150 g Zucker</li>
-          <li data-basis="100" data-einheit="g Butter" class="grey">100 g Butter</li>
-          <li data-basis="2" data-einheit="Eier" class="space">2 Eier</li>
-          <li data-basis="50" data-einheit="g Kakaopulver" class="grey">50 g Kakaopulver</li>
-          <li data-basis="1" data-einheit="TL Backpulver" class="space">1 TL Backpulver</li>
-          <li data-basis="100" data-einheit="ml Milch" class="grey">100 ml Milch</li>
+        <ul id="ingredient" class="liste-ul" style="list-style-type: none;">
+          <li data-base="200" data-unit="g Mehl" class="grey">200 g Mehl</li>
+          <li data-base="150" data-unit="g Zucker" class="space">150 g Zucker</li>
+          <li data-base="100" data-unit="g Butter" class="grey">100 g Butter</li>
+          <li data-base="2" data-unit="Eier" class="space">2 Eier</li>
+          <li data-base="50" data-unit="g Kakaopulver" class="grey">50 g Kakaopulver</li>
+          <li data-base="1" data-unit="TL Backpulver" class="space">1 TL Backpulver</li>
+          <li data-base="100" data-unit="ml Milch" class="grey">100 ml Milch</li>
         </ul>
       </div>
 
@@ -111,7 +111,7 @@
   </footer>
 
   <script src="liste.js"></script>
-  <script src="script-burger-menü.js"></script>
+  <script src="script-burger-menu.js"></script>
 
 </body>
 

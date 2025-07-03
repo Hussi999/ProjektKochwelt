@@ -1,4 +1,4 @@
-// Hamburger-Menü-Logik
+
 const hamburger = document.querySelector('.hamburger');
 const nav = document.getElementById('main-nav');
 const body = document.body;

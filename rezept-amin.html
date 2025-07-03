@@ -51,28 +51,28 @@
 
         <div>
           <span>Zutaten für:</span>
-          <input id="portionen" type="number" value="4" min="1" max="10">
+          <input id="portion" type="number" value="4" min="1" max="10">
         </div>
 
-        <button class="button" onclick="aktualisiereZutaten()" type="button">Portionen</button>
+        <button class="button" onclick="updateIngredients()" type="button">Portionen</button>
 
       </div>
       <div class="liste-div">
 
-        <ul id="zutaten" class="liste-ul" style="list-style-type: none;">
-          <li data-basis="250" data-einheit="g chinesische Eiernudeln, gekocht" class="grey">250 g chinesische
+        <ul id="ingredient" class="liste-ul" style="list-style-type: none;">
+          <li data-base="250" data-unit="g chinesische Eiernudeln, gekocht" class="grey">250 g chinesische
             Eiernudeln,
             gekocht</li>
-          <li data-basis="200" data-einheit="g Sojasprossen oder Mungobohnenkeimlinge" class="space">200 g Sojasprossen
+          <li data-base="200" data-unit="g Sojasprossen oder Mungobohnenkeimlinge" class="space">200 g Sojasprossen
             oder
             Mungobohnenkeimlinge</li>
-          <li data-basis="1" data-einheit="Stück Lauchzwiebel, klein geschnitten" class="grey">1 Stück Lauchzwiebel,
+          <li data-base="1" data-unit="Stück Lauchzwiebel, klein geschnitten" class="grey">1 Stück Lauchzwiebel,
             klein
             geschnitten</li>
-          <li data-basis="20" data-einheit="g Paprikapulver, Currypulver und Chilipulver" class="space">20 g
+          <li data-base="20" data-unit="g Paprikapulver, Currypulver und Chilipulver" class="space">20 g
             Paprikapulver,
             Currypulver und Chilipulver</li>
-          <li data-basis="200" data-einheit="g Geflügelfleisch" class="grey">200 g Geflügelfleisch</li>
+          <li data-base="200" data-unit="g Geflügelfleisch" class="grey">200 g Geflügelfleisch</li>
         </ul>
 
       </div>
@@ -121,7 +121,7 @@
   </footer>
 
   <script src="liste.js"></script>
-  <script src="script-burger-menü.js"></script>
+  <script src="script-burger-menu.js"></script>
 
 </body>
 

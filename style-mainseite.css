@@ -51,17 +51,15 @@ section {
   justify-content: space-between;
   align-items: center;
   /* Optional: Begrenzung der Breite */
-  padding: 0 20px;
 }
 
-.container-wrap2 {
+.container-wrap3 {
   width: 100%;
   max-width: 1924px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* Optional: Begrenzung der Breite */
-  padding: 0 20px;
 }
 
 .container-wrap2 {
@@ -93,7 +91,12 @@ header {
 
 header img {
   width: 200px;
+  margin-left: 20px;
 
+}
+
+.text-header {
+  padding-right: 20px;
 }
 
 .navlink {
@@ -341,6 +344,7 @@ footer {
 .footer-img {
   width: 250px;
   height: auto;
+  margin-left: 20px;
 
 
 }
@@ -349,7 +353,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 32px;
-
+  margin-right: 20px;
 
 }
 

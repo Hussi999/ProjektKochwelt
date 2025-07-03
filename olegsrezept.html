@@ -52,26 +52,26 @@
 
                 <div>
                     <span>Zutaten für:</span>
-                    <input id="portionen" type="number" value="4" min="1" max="10">
+                    <input id="portion" type="number" value="4" min="1" max="10">
                 </div>
 
-                <button class="button" onclick="aktualisiereZutaten()" type="button">Portionen</button>
+                <button class="button" onclick="updateIngredients()" type="button">Portionen</button>
 
             </div>
             <div class="liste-div">
 
-                <ul id="zutaten" class="liste-ul" style="list-style-type: none;">
+                <ul id="ingredient" class="liste-ul" style="list-style-type: none;">
 
                     <li data-basis="125" data-einheit=" g Lachs, frish (suschiqualität)" class="grey"> 500g Lachs, frish
                         (suschiqualität)</li>
-                    <li data-basis="7.5" data-einheit=" ml Essig" class="space">0.30 ml Essig</li>
-                    <li data-basis="7.5" data-einheit="ml  Zitronensaft" class="grey">0.30 ml Zitronensaft</li>
-                    <li data-basis="11.25" data-einheit="ml Weißwein" class="space">45ml Weißwein</li>
-                    <li data-basis="1" data-einheit=" EL Öl" class="grey">4EL Öl</li>
-                    <li data-basis="1" data-einheit="g Zucker" class="space">4g Zucker</li>
-                    <li data-basis="1" data-einheit=" EL Kapern,gechakt" class="grey">4EL Kapern,gechakt</li>
-                    <li data-basis="1" data-einheit=" Bündel Kerbelblättchen" class="space">4Bündel Kerbelblättchen</li>
-                    <li data-basis="5" data-einheit=" g Salz und Pfefer" class="grey">20g Salz und Pfefer</li>
+                    <li data-base="7.5" data-unit=" ml Essig" class="space">0.30 ml Essig</li>
+                    <li data-base="7.5" data-unit="ml  Zitronensaft" class="grey">0.30 ml Zitronensaft</li>
+                    <li data-base="11.25" data-unit="ml Weißwein" class="space">45ml Weißwein</li>
+                    <li data-base="1" data-unit=" EL Öl" class="grey">4EL Öl</li>
+                    <li data-base="1" data-unit="g Zucker" class="space">4g Zucker</li>
+                    <li data-base="1" data-unit=" EL Kapern,gechakt" class="grey">4EL Kapern,gechakt</li>
+                    <li data-base="1" data-unit=" Bündel Kerbelblättchen" class="space">4Bündel Kerbelblättchen</li>
+                    <li data-base="5" data-unit=" g Salz und Pfefer" class="grey">20g Salz und Pfefer</li>
 
                 </ul>
 
@@ -119,7 +119,7 @@
     </footer>
 
     <script src="liste.js"></script>
-    <script src="script-burger-menü.js"></script>
+    <script src="script-burger-menu.js"></script>
 
 </body>
 

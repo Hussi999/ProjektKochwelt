@@ -27,7 +27,6 @@ body {
     justify-content: space-between;
     align-items: center;
     /* Optional: Begrenzung der Breite */
-    padding: 0 20px;
 }
 
 .container-wrap2 {
@@ -37,7 +36,6 @@ body {
     justify-content: space-between;
     align-items: center;
     /* Optional: Begrenzung der Breite */
-    padding: 0 20px;
 }
 
 .container-wrap {
@@ -64,7 +62,11 @@ header {
 
 header img {
     width: 200px;
+    padding-left: 20px;
+}
 
+.text-header {
+    padding-right: 20px;
 }
 
 .navlink {
@@ -117,29 +119,7 @@ h1 {
     text-underline-offset: 7px;
 }
 
-.hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 24px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    z-index: 1100;
-    position: absolute;
-    right: 20px;
-    transition: transform 0.3s ease;
-}
 
-.hamburger .bar {
-    width: 100%;
-    height: 3px;
-    background-color: #333;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-}
 
 button {
     padding: 10px;
@@ -179,6 +159,30 @@ footer {
     height: 32px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1100;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
 }
 
 @media (max-width: 675px) {
@@ -269,11 +273,11 @@ footer {
     }
 
     .social-icons {
-        margin-right: 0px;
+        margin-right: 20px;
     }
 
     .datenschutz-link {
-        margin-left: 0px;
+        margin-left: 20px;
     }
 
     

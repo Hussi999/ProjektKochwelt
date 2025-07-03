@@ -53,23 +53,23 @@
 
                 <div>
                     <span>Zutaten für:</span>
-                    <input id="portionen" type="number" value="4" min="1" max="10">
+                    <input id="portion" type="number" value="4" min="1" max="10">
                 </div>
 
-                <button class="button" onclick="aktualisiereZutaten()" type="button">Portionen</button>
+                <button class="button" onclick="updateIngredients()" type="button">Portionen</button>
 
             </div>
             <div class="liste-div">
 
-                <ul id="zutaten" class="liste-ul" style="list-style-type: none;">
+                <ul id="ingredient" class="liste-ul" style="list-style-type: none;">
 
-                    <li data-basis="1" data-einheit="Kalbsplätzli (z. B. Stotzen, je ca. 150 g)" class="grey">1
+                    <li data-base="1" data-unit="Kalbsplätzli (z. B. Stotzen, je ca. 150 g)" class="grey">1
                         Kalbsplätzli
                         (z. B. Stotzen, je ca. 150 g)</li>
-                    <li data-basis="0.25" data-einheit="TL Salz" class="space">0.25 TL Salz</li>
-                    <li data-basis="0.75" data-einheit="EL Mehl" class="grey">0.75 EL Mehl</li>
-                    <li data-basis="50" data-einheit="g Paniermehl" class="space">50g Paniermehl</li>
-                    <li data-basis="0.25" data-einheit="Bio-Zitrone" class="grey">0.25 Bio-Zitrone</li>
+                    <li data-base="0.25" data-unit="TL Salz" class="space">0.25 TL Salz</li>
+                    <li data-base="0.75" data-unit="EL Mehl" class="grey">0.75 EL Mehl</li>
+                    <li data-base="50" data-unit="g Paniermehl" class="space">50g Paniermehl</li>
+                    <li data-base="0.25" data-unit="Bio-Zitrone" class="grey">0.25 Bio-Zitrone</li>
 
                 </ul>
 
@@ -128,7 +128,7 @@
     </footer>
 
     <script src="liste.js"></script>
-    <script src="script-burger-menü.js"></script>
+    <script src="script-burger-menu.js"></script>
 
 </body>
 

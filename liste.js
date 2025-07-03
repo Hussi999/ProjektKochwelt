@@ -1,50 +1,22 @@
-//   function aktualisiereZutaten() {
-//     const portionenInput = document.getElementById('portionen');
-//     const zutatenList = document.getElementById('zutaten').getElementsByTagName('li');
-//     const portionen = Math.max(1, parseInt(portionenInput.value)); // Mindestwert 1
-//     portionenInput.value = portionen;
 
-//     for (let item of zutatenList) {
-//       const basis = parseFloat(item.getAttribute('data-basis'));
-//       const einheit = item.textContent.replace(/^[\d.,]+/, '').trim();
-//       const neueMenge = (basis * portionen).toFixed(2).replace(/\.00$/, '');
-//       item.textContent = `${neueMenge} ${einheit}`;
-//     }
-//   } Chat-GBPT seine antwort
+function updateIngredients() {
+    const servingsInput = document.getElementById('portion');
+    const ingredientItems = document.querySelectorAll('#ingredient li');
 
-function aktualisiereZutaten() {
-    const portionenInput = document.getElementById('portionen');
-    const zutatenList = document.querySelectorAll('#zutaten li');
-
-    let portionen = parseInt(portionenInput.value);
-    if (isNaN(portionen) || portionen < 1) {
-        portionen = 1;
-    } else if (portionen > 10) {
-        portionen = 10;
+    let servings = parseInt(servingsInput.value);
+    if (isNaN(servings) || servings < 1) {
+        servings = 1;
+    } else if (servings > 10) {
+        servings = 10;
     }
-    portionenInput.value = portionen;
+    servingsInput.value = servings;
 
-    for (let i = 0; i < zutatenList.length; i++) {
-        const item = zutatenList[i];
-        const basis = +item.getAttribute('data-basis');
-        const einheit = item.getAttribute('data-einheit');
-        const menge = basis * portionen;
+    for (let i = 0; i < ingredientItems.length; i++) {
+        const item = ingredientItems[i];
+        const baseAmount = +item.getAttribute('data-base');
+        const unit = item.getAttribute('data-unit');
+        const amount = baseAmount * servings;
 
-        // zutatenList.forEach(item => {
-        //     const basis = +item.getAttribute('data-basis');
-        //     const einheit = item.getAttribute('data-einheit');
-        //     const menge = basis * portionen; Vereinfachte version laut mit forEach schleife
-
-        item.textContent = menge + " " + einheit;
-
-        // let formatiert;
-        // if (Number.isInteger(menge)) {
-        //     formatiert = menge.toString();
-        // } else {
-        //     formatiert = menge.toFixed(2);
-        // }.replace('.', ','); Komma statt Punkt
-
-        // item.textContent = formatiert + " " + einheit; Wenn man mehr als 2 kommastellen hat
-
-    };//  bei forEach braucht man noch ein ) nach der }: })
-} // fertig umprogrammierte eigene lösung
+        item.textContent = amount + " " + unit;
+    }
+}
